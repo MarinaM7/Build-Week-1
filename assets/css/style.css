@@ -1,22 +1,45 @@
-
-
-.img-slider {
+header {
     display: flex;
+    background-image: url(../driveImg/images/header.jpg);
+    background-size: cover;
+    height: 500px;
+    align-items: flex-end;
+
+
+
 }
 
-.AboutUs {
-    text-align: center;
-    background-color: #F6F6F6;
-    padding: 70px 0px;
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 70%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
 }
 
-.cooker img {
-    border: 1,5px solid white;
-    border-radius: 50%;
+
+
+
+nav img {
+
+    height: 26px;
 }
 
-.AboutUs p {
-    line-height: 26px;
-    font-size: 16px;
-    padding-top: 40px;
+nav li {
+
+    list-style: none;
+}
+
+nav>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+nav button {
+    color: red;
+
 }
