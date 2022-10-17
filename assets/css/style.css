@@ -1,0 +1,22 @@
+
+
+.img-slider {
+    display: flex;
+}
+
+.AboutUs {
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 70px 0px;
+}
+
+.cooker img {
+    border: 1,5px solid white;
+    border-radius: 50%;
+}
+
+.AboutUs p {
+    line-height: 26px;
+    font-size: 16px;
+    padding-top: 40px;
+}
