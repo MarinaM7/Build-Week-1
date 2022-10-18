@@ -3,15 +3,18 @@
 @font-face {
     font-family: myFont;
     src: url(../driveImg/fonts/ufonts.com_tw-cen-mt.ttf);
-} 
+}
 
 body {
     font-family: myFont;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 22px;
     padding: 40px 0px;
+    color: #2e2e2e;
 }
 
 h1 span {
@@ -20,10 +23,12 @@ h1 span {
 
 h2 {
     font-size: 24px;
+    color: #333333;
 }
 
 h3 {
     font-size: 20px;
+    color: #2e2e2e;
 }
 
 h4 {
@@ -32,9 +37,23 @@ h4 {
 
 p {
     font-size: 14px;
+    color: #959595;
+}
+
+span {
+    color: #FF5333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .moreinfo {
     font-size: 15px;
     padding: 28px 100px;
+}
+
+.elementi {
+    padding: 0px 15px;
 }

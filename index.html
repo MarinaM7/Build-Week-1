@@ -15,83 +15,95 @@
     <header>
 
         <nav>
-            <img src="assets/driveImg/images/logo.png" alt="">
+            <div id="elementi">
+                <div id="logo">
+                    <img src="assets/driveImg/images/logo.png" alt="">
+                </div>
+                <label for="menuButton" id="menuMobile"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="menuButton">
 
-            <button type="button"><i class="fa-solid fa-bars"></i></button>
+                <ul id="menu">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">CONTACT</a></li>
 
-            <ul id="menu">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">CONTACT</a></li>
-
-            </ul>
+                </ul>
+            </div>
 
         </nav>
     </header>
 
     <main>
+
+        <!----------------------INIZIO HOME---------------------->
         <section class="home">
+            <div class="elementi">
+                <h3>FEATURED <span>WORKS</span></h3>
+                <div class="img-slider">
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
+                    </div>
+                </div>
+                <div class="dot-slider">
 
-            <h3>FEATURED <span>WORKS</span></h3>
-            <div class="img-slider">
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
                 </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
-                </div>
-                <div class="single-img">
-                    <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
+                <div class="arrow-next">
+                    <i class="fa fa-angle-right"></i>
                 </div>
             </div>
-            <div class="dot-slider">
-
-            </div>
-            <div class="arrow-next">
-                <i class="fa fa-angle-right"></i>
-            </div>
-
         </section>
+        <!----------------------FINE HOME---------------------->
 
+        <!----------------------INIZIO ABOUT US---------------------->
         <section class="AboutUs">
-
-            <div class="cooker">
-                <img src="assets/driveImg/images/cooker-img.png" alt="cooker">
+            <div class="elementi">
+                <div class="cooker">
+                    <img src="assets/driveImg/images/cooker-img.png" alt="cooker">
+                </div>
+                <h1>
+                    Your <span>Restautant's</span><br>Website Has To Look <span>Good</span>
+                </h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                    aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                </p>
             </div>
-            <h1>
-                Your <span>Restautant's</span><br>Website Has To Look <span>Good</span>
-            </h1>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            </p>
-
         </section>
+        <!----------------------FINE ABOUT US---------------------->
 
         <section>
+
             <div>
                 <h1>
                     Latest
@@ -170,13 +182,13 @@
 
         <section id="prezzi">
             <!--id price-->
-            <div class="container">
+            <div class="contenitore">
                 <!--class uguale al sito-->
-                <div class="row">
+                <div class="contenitore1">
                     <!--class uguale al sito-->
-                    <div class="column-block">
+                    <div class="elementi">
                         <!--class col-md-12-->
-                        <div class="block">
+                        <div class="contenuto">
                             <!--class uguale al sito-->
                             <h1 class="heading-wow">
                                 <!--classe heading wow fadeInUp-->
@@ -211,7 +223,7 @@
                                                 <h2>Pancakes n' Such</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 25.00</span>
+                                                <span class="sp-price">$ 25.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -228,7 +240,7 @@
                                                 <h2>Homestyle Chicken Pot Pie</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 10.00</span>
+                                                <span class="sp-price">$ 10.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -245,7 +257,7 @@
                                                 <h2>Cereal, Panecillos y Frutas</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 5.00</span>
+                                                <span class="sp-price">$ 5.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -262,7 +274,7 @@
                                                 <h2>Meat of Skewers</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 15.00</span>
+                                                <span class="sp-price">$ 15.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -279,7 +291,7 @@
                                                 <h2>Steak with a Garlic and Parsley Risotto</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 75.00</span>
+                                                <span class="sp-price">$ 75.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -296,7 +308,7 @@
                                                 <h2>Caesar Salad</h2>
                                                 <div class="border-bottom"></div>
                                                 <!--class uguale al sito-->
-                                                <span>$ 7.00</span>
+                                                <span class="sp-price">$ 7.00</span>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -315,13 +327,13 @@
         </section>
         <section id="subscribe">
             <!--id uguale al sito-->
-            <div class="container">
+            <div class="contenitore">
                 <!--class uguale al sito-->
-                <div class="row">
+                <div class="contenitore1">
                     <!--class uguale al sito-->
-                    <div class="column-block">
+                    <div class="elementi">
                         <!--class col-md-12-->
-                        <div class="block">
+                        <div class="contenuto">
                             <!--class uguale al sito-->
                             <h1 class="heading-wow">
                                 <!--classe heading wow fadeInUp-->
