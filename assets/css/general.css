@@ -1,0 +1,40 @@
+/*-----GENERALE-----*/
+
+@font-face {
+    font-family: myFont;
+    src: url(../driveImg/fonts/ufonts.com_tw-cen-mt.ttf);
+} 
+
+body {
+    font-family: myFont;
+}
+
+h1 {
+    font-size: 22px;
+    padding: 40px 0px;
+}
+
+h1 span {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.moreinfo {
+    font-size: 15px;
+    padding: 28px 100px;
+}
