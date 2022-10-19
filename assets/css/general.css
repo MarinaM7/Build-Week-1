@@ -41,7 +41,12 @@ h4 {
     font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
     font-family: myfont;
 }
@@ -60,12 +65,17 @@ span {
 }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    padding-left: 0;
 }
 
-a {
-    text-decoration: none;
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration: none !important;
 }
 
 hr {
@@ -82,32 +92,342 @@ hr {
     padding: 0px 15px;
 }
 
+/*-----------------------------MEDIA INIZIO-----------------------------*/
+
 @media screen and (min-width: 768px) {
-    h1{
+
+    h1 {
         font-size: 36px;
     }
+
     h1 span {
         font-size: 45px;
     }
 
-    .AboutUs p, #mainP {
+    /*HOME*/ 
+
+    .single-img {
+        width: 230px;
+        height: 170px;
+        margin-right: 10px;
+    }
+
+    #three {
+        display: block;
+    }
+
+    /*ABOUT US*/
+
+    .AboutUs p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .AboutUs p,
+    #mainP {
         margin: 0px 100px;
     }
+
+    /* MENU */
+
+    .heading-wow {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .heading-wow span {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    #mainP {
+        padding: 30px 0 0;
+    }
+
+    #prezzi .contenuto .priceList {
+        padding-top: 85px;
+    }
+
+    .itemOfPrice {
+        display: flex;
+    }
+
+    .border-bottom {
+        flex-grow: 2;
+        border-bottom: 1px dotted #c9c9c9;
+        margin-bottom: 25px;
+    }
+
+    .sp-price {
+        align-self: flex-end;
+        margin-bottom: 25px;
+    }
+
+    /* NEWS*/
+
+    #subscribe h1 {
+        font-size: 36px;
+    }
+
+    #subscribe span {
+        font-size: 45px;
+    }
+
+    .input-group {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .form-control {
+        width: 60%;
+        /* potrebbe non servire*/
+        height: 53px;
+    }
+
+    .input-btn {
+        margin-top: 0px;
+    }
+
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+
+/*MEDIA BLOG JOUSSOUFA*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #blog .block ul li {
+    display: flex;
+  }
+
+  #blog .block {
+    text-align: center;
+  }
+
+  #blog .block ul {
+    padding-bottom: 40px;
+  }
+
+  #blog .block ul li {
+    width: 100%;
+  }
+
+  #blog .block h3 ul li {
+    padding: 0px 0px 40px;
+  }
+
+  #blog .block .blog-img {
+    width: 66%;
+  }
+
+  #blog .block .moreinfo {
+    float: none;
+    margin-top: 30px;
+  }
+
+  #blog .block .info:hover {
+    border-radius: 30px;
+  }
+
+  #blog .block h1 {
+    font-size: 36px;
+  }
+
+  #blog .block span {
+    font-size: 40px;
+  }
+
+  .elementi {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    
+  .block ul li {
+    display: flex;
+
+  }
+
+  .block ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #blog .block {
+    text-align: center;
+  }
+
+  #blog .block ul {
+    padding-bottom: 40px;
+  }
+
+  /* #blog .block h3 ul li {
+    padding: 0px 0px 40px;
+  } */
+
+  #blog .block .blog-img {
+    width: 130%;
+  }
+
+  #blog .block .moreinfo {
+    float: right;
+    margin-top: 30px;
+  }
+
+  #blog .block .info:hover {
+    border-radius: 30px;
+  }
+
+  #blog .block h1 {
+    font-size: 36px;
+  }
+
+  #blog .block span {
+    font-size: 40px;
+  }
+
+  .elementi {
+    margin: auto;
+    width: 700px;
+  }
 }
 
 
-a, a:active, a:focus, a:active {
-    text-decoration: none !important;
-}
 
 
+/* MEDIA QUERY FEDERICO */
 
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
-
+    .contenitore {
+      width: 750px;
+    }
+  
+  
+    .formGroup {
+      text-align: center;
+    }
+  
+    #contatti .contenuto a {
+      padding: 15px;
+      float: inherit;
+    }
+  
+  
+    #contatti {
+      padding: 60px 0 0;
+    }
+  
+    #contatti .contenuto {
+      text-align: center;
+    }
+  
+    #contatti .contenuto .title {
+      text-align: left;
+    }
+  
+    #contatti .contenuto a {
+      padding: 15px 80px;
+      float: inherit;
+    }
+  
+    #contatti .contenuto {
+      position: relative;
+    }
+  
+  
+    #footer .contenuto {
+      padding-bottom: 20px;
+    }
+  
+    #footer .contenuto h3 {
+      padding-bottom: 10px;
+    }
+  
+    #bottomFooter .contenuto .navbar-nav {
+      float: inherit;
+      width: 70%;
+      margin: 0 auto;
+    }
+  
+    #footer-bottom .block p {
+      text-align: center;
+      padding-top: 0px;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 767px) {
+    #contatti {
+      padding: 60px 0 0;
+    }
+  
+    #contatti .contenuto a {
+      padding: 20px 80px;
+      width: 100%;
+      float: inherit;
+    }
+  
+    #footer .contenuto {
+      padding-bottom: 50px;
+    }
+  
+    #footer .contenuto .info ul li {
+      width: 100%;
+      margin-right: 0px;
+    }
+  
+  
+  
+  
+    #bottomFooter .contenuto p {
+      text-align: center;
+      padding-top: 0px;
+    }
+  
+    .formGroup {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  @media only screen and (min-width: 992px) {
+  
+    .contenitore {
+      width: 970px;
+    }
+  
+    #contatti .elementi {
+      width: 100%;
+    }
+  
+  
+    .elementi1 {
+      width: 33,3%;
+    }
+  
+  
+    #contenitoreFlex {
+      display: flex;
+    }
+  
+  
+  
+    #footer .contenitore {
+      width: 970px;
+    }
+  
+  
+    #socialGallery {
+      display: flex;
+    }
+  
+    #footer .contenuto {
+      flex: none;
+    }
+  
+  }
