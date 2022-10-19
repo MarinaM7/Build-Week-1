@@ -6,7 +6,6 @@ header {
     background-size: cover;
     height: 500px;
     align-items: flex-end;
-
 }
 
 nav {
@@ -18,7 +17,6 @@ nav {
     padding: 20px;
     position: sticky;
     top: 0;
-
 }
 
 nav img {
@@ -27,13 +25,22 @@ nav img {
 }
 
 nav li {
-
     list-style: none;
+    padding-right: 20px;
 }
 
 nav>li {
     margin: 0 1rem;
     overflow: hidden;
+}
+
+nav label, nav input{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav button {
@@ -43,11 +50,81 @@ nav button {
 
 /*HOME*/
 
+.home {
+    padding: 50px 0px;
+}
 
+.titoloSlider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow-next {
+    font-size: 20px;
+    color: #a4a4a4;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-slider {
+    display: flex;
+}
+
+.single-img {
+    border-radius: 2px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+.single-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#two, #three, #four, #five, #six, #seven, #eight {
+    display: none;
+}
+
+/* PER JAVASCRIPT
+
+.single-img {
+    display: none;
+}
+
+.single-img:nth-child(1){
+    display: block;
+}
+
+*/
+
+.dot-slider {
+    font-size: 10px;
+    text-align: center;
+    color: #cfcfcf;
+}
 
 /*ABOUT US */
 
+.AboutUs {
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 100px 0px;
+}
 
+.cooker img {
+    border: 1, 5px solid white;
+    border-radius: 50%;
+}
+
+.AboutUs p {
+    line-height: 26px;
+    font-size: 16px;
+    padding-top: 40px;
+}
 
 /*BLOG*/
 

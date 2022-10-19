@@ -30,7 +30,6 @@
                     <li><a href="">MENU</a></li>
                     <li><a href="">NEWS</a></li>
                     <li><a href="">CONTACT</a></li>
-
                 </ul>
 
             </nav>
@@ -39,47 +38,51 @@
 
     <main>
 
-        <!----------------------INIZIO HOME---------------------->
+        <!---------------------------INIZIO HOME--------------------------->
         <section class="home">
             <div class="elementi">
-                <h3>FEATURED <span>WORKS</span></h3>
+                <div class="titoloSlider">
+                    <h3>FEATURED <span>WORKS</span></h3>
+                    <button class="arrow-next" onclick="succ()">
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
                 <div class="img-slider">
-                    <div class="single-img">
+                    <div id="one" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
                     </div>
-                    <div class="single-img">
+                    <div id="two" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
                     </div>
-                    <div class="single-img">
+                    <div id="three" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
                     </div>
-                    <div class="single-img">
+                    <div id="four" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
                     </div>
-                    <div class="single-img">
+                    <div id="five" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-1.jpg" alt="cake">
                     </div>
-                    <div class="single-img">
+                    <div id="six" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-2.jpg" alt="ravioli">
                     </div>
-                    <div class="single-img">
+                    <div id="seven" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-3.jpg" alt="carne">
                     </div>
-                    <div class="single-img">
+                    <div id="eight" class="single-img">
                         <img src="assets/driveImg/images/slider/slider-img-4.jpg" alt="frittella">
                     </div>
                 </div>
                 <div class="dot-slider">
-
-                </div>
-                <div class="arrow-next">
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
                 </div>
             </div>
         </section>
-        <!----------------------FINE HOME---------------------->
+        <!---------------------------FINE HOME--------------------------->
 
-        <!----------------------INIZIO ABOUT US---------------------->
+        <!---------------------------INIZIO ABOUT US--------------------------->
         <section class="AboutUs">
             <div class="elementi">
                 <div class="cooker">
@@ -101,7 +104,7 @@
                 </p>
             </div>
         </section>
-        <!----------------------FINE ABOUT US---------------------->
+        <!---------------------------FINE ABOUT US--------------------------->
 
         <section id="blog">
             <div class="elementi">
@@ -518,6 +521,8 @@
 
 
     <!---------------------------- FINE FOOTER (SECONDA PARTE) ---------------------------->
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
