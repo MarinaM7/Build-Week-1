@@ -15,6 +15,7 @@ h1 {
     font-size: 22px;
     padding: 40px 0px;
     color: #2e2e2e;
+    margin: 0;
 }
 
 h1 span {
@@ -38,6 +39,7 @@ h4 {
 p {
     font-size: 14px;
     color: #959595;
+    margin: 0;
 }
 
 span {
@@ -49,6 +51,15 @@ ul {
     padding-left: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+hr {
+    color: #c8c1b3;
+    width: 130px;
+}
+
 .moreinfo {
     font-size: 15px;
     padding: 28px 100px;
@@ -56,4 +67,17 @@ ul {
 
 .elementi {
     padding: 0px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 36px;
+    }
+    h1 span {
+        font-size: 45px;
+    }
+
+    .AboutUs p, #mainP {
+        margin: 0px 100px;
+    }
 }
