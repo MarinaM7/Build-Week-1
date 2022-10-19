@@ -1,47 +1,131 @@
-/*HEADER*/
+/*-------------------------------HEADER-------------------------------*/
 
 header {
-  display: flex;
   background-image: url(../driveImg/images/header.jpg);
   background-size: cover;
-  height: 500px;
-  align-items: flex-end;
-
-}
-
-nav {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  opacity: 70%;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-
+  height: 300px;
+  position: relative;
 }
 
-nav img {
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../driveImg/images/overlay-pattern2.png);
+  opacity: 0.3;
+}
 
+#logo {
   height: 26px;
 }
 
-nav li {
-
-  list-style: none;
+.elementi {
+  width: 100%;
 }
 
-nav>li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-nav button {
+.elementi label {
   color: red;
+}
+
+#navigazione {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 90%;
+  padding: 15px;
+  margin-top: -55px;
+}
+
+input #menuMobile {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+nav ul {
+  background-color: white;
+  position: relative;
+  line-height: 3;
+  padding-left: 12px;
+}
+
+nav ul ::before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: 90%;
+}
+
+input#menuButton {
+  display: none;
+}
+
+input#menuButton:checked~nav {
+  height: 900px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+  #menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      padding: 5px 10px;
+      margin-top: -55px;
+  }
+
+  #menu label {
+      display: none;
+  }
+
+  nav {
+      position: static;
+      overflow: visible;
+      height: auto;
+      padding: 0;
+      grid-column: 2/ span 2;
+  }
+
+  input#menuButton:checked~nav {
+      height: auto;
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: space-evenly;
+  }
 
 }
 
-/*HOME*/
+
+/*-------------------------------HOME-------------------------------*/
 
 .home {
   padding: 50px 0px;
@@ -106,7 +190,7 @@ nav button {
   color: #cfcfcf;
 }
 
-/*ABOUT US */
+/*-------------------------------ABOUT US-------------------------------*/
 
 .AboutUs {
   text-align: center;
@@ -194,7 +278,7 @@ nav button {
   border: 1px solid #ff530a;
 }
 
-/*MENU*/
+/*-------------------------------MENU-------------------------------*/
 
 #prezzi {
   padding-top: 70px;
@@ -238,6 +322,7 @@ h2 {
   float: inline-end;
   border: 1px solid #ff4f02;
   color: #ff4f02;
+  background-color: #ffff;
   font-weight: 600;
   padding: 28px 105px;
   transition: .3s all;
@@ -248,7 +333,7 @@ h2 {
   color: #ffff;
 }
 
-/*NEWS*/
+/*-------------------------------NEWS-------------------------------*/
 
 #subscribe {
   background-image: url('../driveImg/images/subscribe-bg.jpg');
@@ -273,7 +358,7 @@ h2 {
   opacity: 0.3;
 }
 
-#subscribe h1 {
+#subscribe .heading-wow {
   color: #ffff;
   font-size: 30px;
 }
@@ -361,7 +446,7 @@ h2 {
 }
 
 
-/*CONTATTI*/
+/*-------------------------------CONTATTI-------------------------------*/
 
 
 .contenitore {
@@ -425,7 +510,7 @@ h2 {
 
 
 
-/* FORM */
+/* -------------------------------FORM------------------------------- */
 
 .formGroup {
   margin-bottom: 15px;
@@ -503,7 +588,7 @@ h2 {
   border: 1px solid #7EC3BB;
 }
 
-/*FOOTER*/
+/*-------------------------------FOOTER-------------------------------*/
 
 
 #footer {
@@ -628,7 +713,7 @@ h2 {
   color: #474747;
 }
 
-/* FOOTER BOTTOM */
+/* -------------------------------FOOTER BOTTOM------------------------------- */
 
 #bottomFooter {
   background: #E9E9E9;

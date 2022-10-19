@@ -12,18 +12,22 @@
 </head>
 
 <body>
+
     <header>
 
-        <div class="elementi">
+    </header>
+
+    <div class="elementi" id="navigazione">
+        <div id="menu">
+            <div id="logo">
+                <img src="assets/driveImg/images/logo.png" alt="">
+            </div>
+            <label for="menuButton" id="menuMobile">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menuButton">
             <nav>
-
-                <div id="logo">
-                    <img src="assets/driveImg/images/logo.png" alt="">
-                </div>
-                <label for="menuButton" id="menuMobile"><i class="fa-solid fa-bars"></i></label>
-                <input type="checkbox" id="menuButton">
-
-                <ul id="menu">
+                <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT US</a></li>
                     <li><a href="">BLOG</a></li>
@@ -31,10 +35,9 @@
                     <li><a href="">NEWS</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
-
             </nav>
         </div>
-    </header>
+    </div>
 
     <main>
 
@@ -192,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
         </section>
 
         <section id="prezzi">
@@ -332,7 +335,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <a class="moreinfo" href="#">MORE INFO</a>
+                                <a class="moreinfo" id= "menuMI" href="#">MORE INFO</a>
                                 <!--classe btn btn-default pull-right wow bounceIn animated-->
                             </div>
                         </div>
