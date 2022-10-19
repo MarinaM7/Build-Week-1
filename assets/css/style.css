@@ -70,7 +70,7 @@ nav button {
   border-radius: 2px;
   padding-bottom: 50px;
   width: 100%;
-  height: 200px;
+  height: 170px;
 }
 
 .single-img img {
@@ -574,7 +574,6 @@ h2 {
 }
 
 
-
 #footer .contenuto .blog ul li h4 i,
 #footer .contenuto .info ul li h4 i,
 #footer .contenuto .gallary ul li h4 i {
@@ -583,6 +582,7 @@ h2 {
   font-size: 20px;
 }
 
+
 #footer .contenuto .blog ul li p,
 #footer .contenuto .info ul li p,
 #footer .contenuto .gallary ul li p {
@@ -590,15 +590,11 @@ h2 {
   font-size: 14px;
 }
 
-
-
-
 #footer .contenuto .blog ul,
 #footer .contenuto .info ul,
 #footer .contenuto .gallary ul {
   padding-top: 20px;
 }
-
 
 #footer .contenuto .socialMedia ul li a {
   display: block;
@@ -617,8 +613,6 @@ h2 {
   color: #fff;
 }
 
-
-
 #footer .contenuto .blog ul li h4 a,
 #footer .contenuto .gallery ul li h4 a {
   color: #FF4F02;
@@ -630,16 +624,11 @@ h2 {
   font-weight: 400;
 }
 
-
-
 #footer .contenuto .info ul li p a {
   color: #474747;
 }
 
-
 /* FOOTER BOTTOM */
-
-
 
 #bottomFooter {
   background: #E9E9E9;
