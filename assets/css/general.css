@@ -243,7 +243,7 @@ hr {
 }
 
 @media screen and (min-width: 992px) {
-    
+
   .block ul li {
     display: flex;
 
@@ -292,8 +292,6 @@ hr {
     width: 700px;
   }
 }
-
-
 
 
 /* MEDIA QUERY FEDERICO */
