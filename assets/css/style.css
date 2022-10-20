@@ -301,10 +301,16 @@ h2 {
   font-size: 16px;
   color: #909090;
   text-align: center;
+  margin: 0px;
+  padding-top: 40px;
 }
 
 #prezzi h3 {
   font-size: 20px;
+}
+
+#prezzi .contenuto .priceList {
+  padding-top: 85px;
 }
 
 #prezzi .contenuto .priceList ul li {
@@ -327,7 +333,7 @@ h2 {
 #menuMI {
   text-decoration: none;
   /*non dovrebbe servire dopo il merge del generale*/
-  float: inline-end;
+  float: right;
   border: 1px solid #ff4f02;
   color: #ff4f02;
   background-color: #ffff;
@@ -341,6 +347,10 @@ h2 {
   color: #ffff;
 }
 
+.priceList ul li {
+  line-height: 1.5;
+}
+
 /*-------------------------------NEWS-------------------------------*/
 
 #subscribe {
@@ -351,6 +361,7 @@ h2 {
   text-align: center;
   position: relative;
   padding: 100px 0px;
+  margin-top: 40px;
 }
 
 #subscribe::before {
@@ -363,12 +374,22 @@ h2 {
   right: 0;
   left: 0;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 #subscribe .heading-wow {
   color: #ffff;
   font-size: 30px;
+}
+
+@media screen and (min-width: 768px){
+#subscribe .heading-wow {
+  font-size: 36px;
+}
+#subscribe .heading-wow span {
+  font-size: 45px;
+}
+
 }
 
 #subscribe span {
@@ -393,7 +414,6 @@ h2 {
   position: relative;
   display: table;
   border-collapse: separate;
-
 }
 
 .form-control {
@@ -404,7 +424,7 @@ h2 {
   border: none;
   height: 65px;
   border-radius: 0px;
-  float: inline-start;
+  float: left;
   font-size: 15px;
   line-height: 1.42857143;
 }
@@ -422,7 +442,7 @@ h2 {
   background: none;
   font-size: 16px;
   display: block;
-  float: inline-start;
+  float: left;
   margin-top: 20px;
 }
 

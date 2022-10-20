@@ -206,10 +206,6 @@ hr {
     padding: 30px 0 0;
   }
 
-  #prezzi .contenuto .priceList {
-    padding-top: 85px;
-  }
-
   .itemOfPrice {
     display: flex;
   }
@@ -220,34 +216,28 @@ hr {
     margin-bottom: 25px;
   }
 
-  .sp-price {
-    align-self: flex-end;
-    margin-bottom: 25px;
+  #prezzi .sp-price {
+    margin-bottom: 28px;
+    margin-left: -45px;  /* cambiamento*/
   }
 
   /* NEWS*/
-
-  #subscribe h1 {
-    font-size: 36px;
-  }
 
   #subscribe span {
     font-size: 45px;
   }
 
-  .input-group {
+  #subscribe .input-group {
     display: flex;
     justify-content: center;
-
   }
 
-  .form-control {
+  #subscribe .form-control {
     width: 60%;
-    /* potrebbe non servire*/
     height: 53px;
   }
 
-  .input-btn {
+  #subscribe .input-btn {
     margin-top: 0px;
   }
 
@@ -407,6 +397,7 @@ hr {
 
 
 @media only screen and (max-width: 767px) {
+
   #contatti {
     padding: 60px 0 0;
   }
@@ -425,9 +416,6 @@ hr {
     width: 100%;
     margin-right: 0px;
   }
-
-
-
 
   #bottomFooter .contenuto p {
     text-align: center;
