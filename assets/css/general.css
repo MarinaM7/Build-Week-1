@@ -112,35 +112,6 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-  #menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 5px 10px;
-    margin-top: -55px;
-  }
-
-  #menu label {
-    display: none;
-  }
-
-  nav {
-    position: static;
-    overflow: visible;
-    height: auto;
-    padding: 0;
-    grid-column: 2/ span 2;
-  }
-
-  input#menuButton:checked~nav {
-    height: auto;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
   .elementi {
     width: 700px;
     margin: 0 auto;
