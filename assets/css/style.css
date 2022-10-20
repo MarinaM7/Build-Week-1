@@ -36,8 +36,9 @@ header::before {
   justify-content: space-between;
   background-color: white;
   opacity: 90%;
-  padding: 15px;
+  padding: 20px;
   margin-top: -55px;
+  align-items: center;
 }
 
 input #menuMobile {
@@ -96,7 +97,8 @@ nav ul li a {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 5px 10px;
-    margin-top: -54px;
+    padding-top: 20px;
+    margin-top: -70px;
   }
 
   #menu label {
@@ -277,6 +279,22 @@ nav ul li a {
   border: 1px solid transparent;
   text-transform: uppercase;
   margin-top: 50px;
+  animation: bounce-in ease;
+  animation-duration: 500ms;
+  animation-delay: 1200ms;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
 }
 
 .moreinfo:hover {
@@ -474,7 +492,7 @@ h2 {
 }
 
 
-/*-------------------------------CONTATTI-------------------------------*/
+/*CONTATTI*/
 
 
 .contenitore {
@@ -538,7 +556,7 @@ h2 {
 
 
 
-/* -------------------------------FORM------------------------------- */
+/* FORM */
 
 .formGroup {
   margin-bottom: 15px;
@@ -549,14 +567,12 @@ h2 {
 
 #contatti .contenuto a {
   background: #FF4F02;
-  float: right;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 0px;
   border: 0px;
-  width: 512px;
-  height: 25px;
+  height: 20px;
   padding-top: 15px;
 }
 
@@ -605,15 +621,18 @@ h2 {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
+  font-family: inherit;
 }
 
 #contatti .contenuto form textarea {
   height: 140px;
   border-radius: 0px;
   box-shadow: none;
+  margin-bottom: 33px;
+  
 }
 
-#contatti .contenuto form textarea:focus {
+#contatti .contenuto textarea:focus {
   border: 1px solid #7EC3BB;
 }
 

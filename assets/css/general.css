@@ -99,6 +99,8 @@ hr {
   margin-right: 15px;
 }
 
+
+
 /*-------------------------------MEDIA Q INIZIO-----------------------------*/
 
 @media screen and (min-width: 480px) {
@@ -148,6 +150,8 @@ hr {
   #mainP {
     margin: 0px 100px;
   }
+
+  /*BLOG*/
 
   #blog .block ul li {
     display: flex;
@@ -218,7 +222,7 @@ hr {
 
   #prezzi .sp-price {
     margin-bottom: 28px;
-    margin-left: -45px;  /* cambiamento*/
+    margin-left: -47px;  /* cambiamento*/
   }
 
   /* NEWS*/
@@ -240,6 +244,8 @@ hr {
   #subscribe .input-btn {
     margin-top: 0px;
   }
+
+  /*FEDERICO*/
 
   .contenitore {
     width: 750px;
@@ -271,6 +277,7 @@ hr {
   #contatti .contenuto a {
     padding: 15px 80px;
     float: inherit;
+    width: 400px;
   }
 
   #contatti .contenuto {
@@ -359,6 +366,8 @@ hr {
     font-size: 40px;
   }
 
+  /*FEDERICO*/
+  
   .contenitore {
     width: 970px;
   }
@@ -369,14 +378,12 @@ hr {
 
 
   .elementi1 {
-    width: 33, 3%;
+    width: 33.3%;
   }
 
 
   #contenitoreFlex {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
   }
 
 
@@ -390,20 +397,30 @@ hr {
     flex: none;
   }
 
+  #socialGallery {
+    display: flex;
+  }
+
+  #contatti .contenuto a {
+    padding: 15px 80px;
+    width: 400px;
+    float: right;
+    margin-right: -28px;
+}
+
 }
 
 
 /*????????????????????????*/
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 760px) {
 
   #contatti {
     padding: 60px 0 0;
   }
 
   #contatti .contenuto a {
-    padding: 20px 80px;
     width: 100%;
     float: inherit;
   }
@@ -425,4 +442,13 @@ hr {
   .formGroup {
     width: 100%;
   }
+}
+
+
+@media only screen and (min-width: 768) and (max-width: 991) {
+	#contatti .contenuto a {
+    padding: 15px 80px;
+    float: inherit;
+    width: 400px;
+}
 }
