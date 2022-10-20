@@ -1,46 +1,47 @@
-/*-----GENERALE-----*/
+/*------------------------------------GENERALE------------------------------------*/
 
 @font-face {
-    font-family: myFont;
-    src: url(../driveImg/fonts/ufonts.com_tw-cen-mt.ttf);
+  font-family: myFont;
+  src: url(../driveImg/fonts/ufonts.com_tw-cen-mt.ttf);
 }
 
 body {
-    font-family: myFont;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 400;
+  font-family: myFont;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 h1 {
-    font-size: 22px;
-    padding: 40px 0px;
-    color: #2e2e2e;
-    margin: 0;
-    text-align: center;
+  font-size: 22px;
+  padding: 40px 0px;
+  color: #2e2e2e;
+  margin: 0;
+  text-align: center;
 }
 
 h1 span {
-    font-size: 28px;
-    font-weight: 600;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h2 {
-    font-size: 24px;
-    color: #333333;
+  font-size: 24px;
+  color: #333333;
 }
 
 h3 {
-    font-size: 20px;
-    color: #2e2e2e;
-    font-weight: 600;
-    padding: 20px 0px;
+  font-size: 20px;
+  color: #2e2e2e;
+  font-weight: 600;
+  padding: 20px 0px;
 }
 
 
 h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h1,
@@ -49,173 +50,109 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0px;
-    font-family: myfont;
+  margin: 0px;
+  font-family: myfont;
 }
 
 p {
-    font-size: 14px;
-    color: #959595;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0px;
-    font-family: myFont;
+  font-size: 14px;
+  color: #959595;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px;
+  font-family: myFont;
 }
 
 span {
-    color: #FF5333;
+  color: #FF5333;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
+img {
+  z-index: 1;
+}
 
 a,
 a:active,
 a:focus,
 a:active {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 hr {
-    color: #c8c1b3;
-    width: 130px;
+  color: #c8c1b3;
+  width: 130px;
 }
 
 .moreinfo {
-    font-size: 15px;
-    padding: 28px 100px;
+  font-size: 15px;
+  padding: 28px 100px;
 }
 
 .elementi {
-    padding: 0px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-/*-----------------------------MEDIA INIZIO-----------------------------*/
+
+
+/*-------------------------------MEDIA Q INIZIO-----------------------------*/
 
 @media screen and (min-width: 480px) {
-    
-    .img-slider #two {
-        display: block;
-    }
+
+  .img-slider #two {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 992px) {
-    
-    .img-slider .single-img {
-        width: 230px;
-        height: 150px;
-        margin-right: 30px;
-    }
 
-    .img-slider #four {
-        display: block;
-    }
-}
 
 @media screen and (min-width: 768px) {
 
-    h1 {
-        font-size: 36px;
-    }
+  .elementi {
+    width: 700px;
+    margin: 0 auto;
+  }
 
-    h1 span {
-        font-size: 45px;
-    }
+  h1,
+  #subscribe .heading-wow {
+    font-size: 36px;
+  }
 
-    /*HOME*/ 
+  h1 span {
+    font-size: 45px;
+  }
 
-    .img-slider .single-img {
-        width: 230px;
-        margin-right: 10px;
-    }
+  /*HOME*/
 
-    .img-slider #three {
-        display: block;
-    }
+  .img-slider .single-img {
+    width: 230px;
+    margin-right: 10px;
+  }
 
-    /*ABOUT US*/
+  .img-slider #three {
+    display: block;
+  }
 
-    .AboutUs p {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+  /*ABOUT US*/
 
-    .AboutUs p,
-    #mainP {
-        margin: 0px 100px;
-    }
+  .AboutUs p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-    /* MENU */
+  .AboutUs p,
+  #mainP {
+    margin: 0px 100px;
+  }
 
-    .heading-wow {
-        font-size: 36px;
-        font-weight: 500;
-    }
+  /*BLOG*/
 
-    .heading-wow span {
-        font-size: 45px;
-        font-weight: 600;
-    }
-
-    #mainP {
-        padding: 30px 0 0;
-    }
-
-    #prezzi .contenuto .priceList {
-        padding-top: 85px;
-    }
-
-    .itemOfPrice {
-        display: flex;
-    }
-
-    .border-bottom {
-        flex-grow: 2;
-        border-bottom: 1px dotted #c9c9c9;
-        margin-bottom: 25px;
-    }
-
-    .sp-price {
-        align-self: flex-end;
-        margin-bottom: 25px;
-    }
-
-    /* NEWS*/
-
-    #subscribe h1 {
-        font-size: 36px;
-    }
-
-    #subscribe span {
-        font-size: 45px;
-    }
-
-    .input-group {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .form-control {
-        width: 60%;
-        /* potrebbe non servire*/
-        height: 53px;
-    }
-
-    .input-btn {
-        margin-top: 0px;
-    }
-
-}
-
-
-/*MEDIA BLOG JOUSSOUFA*/
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   #blog .block ul li {
     display: flex;
   }
@@ -257,13 +194,134 @@ hr {
     font-size: 40px;
   }
 
-  .elementi {
+  /* MENU */
+
+  .heading-wow {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .heading-wow span {
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  #mainP {
+    padding: 30px 0 0;
+  }
+
+  .itemOfPrice {
+    display: flex;
+  }
+
+  .border-bottom {
+    flex-grow: 2;
+    border-bottom: 1px dotted #c9c9c9;
+    margin-bottom: 25px;
+  }
+
+  #prezzi .sp-price {
+    margin-bottom: 28px;
+    margin-left: -47px;  /* cambiamento*/
+  }
+
+  /* NEWS*/
+
+  #subscribe span {
+    font-size: 45px;
+  }
+
+  #subscribe .input-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  #subscribe .form-control {
+    width: 60%;
+    height: 53px;
+  }
+
+  #subscribe .input-btn {
+    margin-top: 0px;
+  }
+
+  /*FEDERICO*/
+
+  .contenitore {
+    width: 750px;
+  }
+
+
+  .formGroup {
+    text-align: center;
+  }
+
+  #contatti .contenuto a {
+    padding: 15px;
+    float: inherit;
+  }
+
+
+  #contatti {
+    padding: 60px 0 0;
+  }
+
+  #contatti .contenuto {
+    text-align: center;
+  }
+
+  #contatti .contenuto .title {
+    text-align: left;
+  }
+
+  #contatti .contenuto a {
+    padding: 15px 80px;
+    float: inherit;
+    width: 400px;
+  }
+
+  #contatti .contenuto {
+    position: relative;
+  }
+
+
+  #footer .contenuto {
+    padding-bottom: 20px;
+  }
+
+  #footer .contenuto h3 {
+    padding-bottom: 10px;
+  }
+
+  #bottomFooter .contenuto .navbar-nav {
+    float: inherit;
+    width: 70%;
     margin: 0 auto;
-    width: 80%;
+  }
+
+  #footer-bottom .block p {
+    text-align: center;
+    padding-top: 0px;
   }
 }
 
 @media screen and (min-width: 992px) {
+
+  .elementi {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .img-slider .single-img {
+    width: 230px;
+    height: 150px;
+    margin-right: 30px;
+  }
+
+  .img-slider #four {
+    display: block;
+  }
+
 
   .block ul li {
     display: flex;
@@ -308,145 +366,89 @@ hr {
     font-size: 40px;
   }
 
-  .elementi {
-    margin: auto;
-    width: 700px;
+  /*FEDERICO*/
+  
+  .contenitore {
+    width: 970px;
+  }
+
+  #contatti .elementi {
+    width: 100%;
+  }
+
+
+  .elementi1 {
+    width: 33.3%;
+  }
+
+
+  #contenitoreFlex {
+    display: flex;
+  }
+
+
+
+  #footer .contenitore {
+    width: 970px;
+  }
+
+
+  #footer .contenuto {
+    flex: none;
+  }
+
+  #socialGallery {
+    display: flex;
+  }
+
+  #contatti .contenuto a {
+    padding: 15px 80px;
+    width: 400px;
+    float: right;
+    margin-right: -28px;
+}
+
+}
+
+
+/*????????????????????????*/
+
+
+@media only screen and (max-width: 760px) {
+
+  #contatti {
+    padding: 60px 0 0;
+  }
+
+  #contatti .contenuto a {
+    width: 100%;
+    float: inherit;
+  }
+
+  #footer .contenuto {
+    padding-bottom: 50px;
+  }
+
+  #footer .contenuto .info ul li {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #bottomFooter .contenuto p {
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .formGroup {
+    width: 100%;
   }
 }
 
 
-/* MEDIA QUERY FEDERICO */
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    .contenitore {
-      width: 750px;
-    }
-  
-  
-    .formGroup {
-      text-align: center;
-    }
-  
-    #contatti .contenuto a {
-      padding: 15px;
-      float: inherit;
-    }
-  
-  
-    #contatti {
-      padding: 60px 0 0;
-    }
-  
-    #contatti .contenuto {
-      text-align: center;
-    }
-  
-    #contatti .contenuto .title {
-      text-align: left;
-    }
-  
-    #contatti .contenuto a {
-      padding: 15px 80px;
-      float: inherit;
-    }
-  
-    #contatti .contenuto {
-      position: relative;
-    }
-  
-  
-    #footer .contenuto {
-      padding-bottom: 20px;
-    }
-  
-    #footer .contenuto h3 {
-      padding-bottom: 10px;
-    }
-  
-    #bottomFooter .contenuto .navbar-nav {
-      float: inherit;
-      width: 70%;
-      margin: 0 auto;
-    }
-  
-    #footer-bottom .block p {
-      text-align: center;
-      padding-top: 0px;
-    }
-  }
-  
-  
-  
-  @media only screen and (max-width: 767px) {
-    #contatti {
-      padding: 60px 0 0;
-    }
-  
-    #contatti .contenuto a {
-      padding: 20px 80px;
-      width: 100%;
-      float: inherit;
-    }
-  
-    #footer .contenuto {
-      padding-bottom: 50px;
-    }
-  
-    #footer .contenuto .info ul li {
-      width: 100%;
-      margin-right: 0px;
-    }
-  
-  
-  
-  
-    #bottomFooter .contenuto p {
-      text-align: center;
-      padding-top: 0px;
-    }
-  
-    .formGroup {
-      width: 100%;
-    }
-  }
-  
-  
-  
-  @media only screen and (min-width: 992px) {
-  
-    .contenitore {
-      width: 970px;
-    }
-  
-    #contatti .elementi {
-      width: 100%;
-    }
-  
-  
-    .elementi1 {
-      width: 33,3%;
-    }
-  
-  
-    #contenitoreFlex {
-      display: flex;
-    }
-  
-  
-  
-    #footer .contenitore {
-      width: 970px;
-    }
-  
-  
-    #socialGallery {
-      display: flex;
-    }
-  
-    #footer .contenuto {
-      flex: none;
-    }
-  
-  }
+@media only screen and (min-width: 768) and (max-width: 991) {
+	#contatti .contenuto a {
+    padding: 15px 80px;
+    float: inherit;
+    width: 400px;
+}
+}

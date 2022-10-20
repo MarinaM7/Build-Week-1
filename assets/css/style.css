@@ -1,47 +1,129 @@
-/*HEADER*/
+/*-------------------------------HEADER-------------------------------*/
 
 header {
-  display: flex;
   background-image: url(../driveImg/images/header.jpg);
   background-size: cover;
-  height: 500px;
-  align-items: flex-end;
-
-}
-
-nav {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  opacity: 70%;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-
+  height: 300px;
+  position: relative;
 }
 
-nav img {
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../driveImg/images/overlay-pattern2.png);
+  opacity: 0.5;
+}
 
+#logo {
   height: 26px;
 }
 
-nav li {
-
-  list-style: none;
+#navigazione {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-nav>li {
-  margin: 0 1rem;
-  overflow: hidden;
+#menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 90%;
+  padding: 20px;
+  margin-top: -55px;
+  align-items: center;
 }
 
-nav button {
+input #menuMobile {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+}
+
+#menuMobile i {
   color: red;
-
+  font-size: 1.2em;
 }
 
-/*HOME*/
+nav {
+  position: absolute;
+  top: 50px;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+nav ul {
+  background-color: white;
+  position: relative;
+  line-height: 3;
+  padding-left: 12px;
+}
+
+nav ul ::before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: 90%;
+}
+
+input#menuButton {
+  display: none;
+}
+
+input#menuButton:checked~nav {
+  height: 900px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  #menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 5px 10px;
+    padding-top: 20px;
+    margin-top: -70px;
+  }
+
+  #menu label {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    overflow: visible;
+    height: auto;
+    padding: 0;
+    grid-column: 2/ span 2;
+  }
+
+  input#menuButton:checked~nav {
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/*-------------------------------HOME-------------------------------*/
 
 .home {
   padding: 50px 0px;
@@ -106,7 +188,7 @@ nav button {
   color: #cfcfcf;
 }
 
-/*ABOUT US */
+/*-------------------------------ABOUT US-------------------------------*/
 
 .AboutUs {
   text-align: center;
@@ -134,6 +216,18 @@ nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+}
+
+#blog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../driveImg/images/overlay-pattern2.png);
+  opacity: 0.5;
 }
 
 .block {
@@ -185,6 +279,22 @@ nav button {
   border: 1px solid transparent;
   text-transform: uppercase;
   margin-top: 50px;
+  animation: bounce-in ease;
+  animation-duration: 500ms;
+  animation-delay: 1200ms;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
 }
 
 .moreinfo:hover {
@@ -194,7 +304,7 @@ nav button {
   border: 1px solid #ff530a;
 }
 
-/*MENU*/
+/*-------------------------------MENU-------------------------------*/
 
 #prezzi {
   padding-top: 70px;
@@ -209,10 +319,16 @@ h2 {
   font-size: 16px;
   color: #909090;
   text-align: center;
+  margin: 0px;
+  padding-top: 40px;
 }
 
 #prezzi h3 {
   font-size: 20px;
+}
+
+#prezzi .contenuto .priceList {
+  padding-top: 85px;
 }
 
 #prezzi .contenuto .priceList ul li {
@@ -235,9 +351,10 @@ h2 {
 #menuMI {
   text-decoration: none;
   /*non dovrebbe servire dopo il merge del generale*/
-  float: inline-end;
+  float: right;
   border: 1px solid #ff4f02;
   color: #ff4f02;
+  background-color: #ffff;
   font-weight: 600;
   padding: 28px 105px;
   transition: .3s all;
@@ -248,7 +365,11 @@ h2 {
   color: #ffff;
 }
 
-/*NEWS*/
+.priceList ul li {
+  line-height: 1.5;
+}
+
+/*-------------------------------NEWS-------------------------------*/
 
 #subscribe {
   background-image: url('../driveImg/images/subscribe-bg.jpg');
@@ -258,6 +379,7 @@ h2 {
   text-align: center;
   position: relative;
   padding: 100px 0px;
+  margin-top: 40px;
 }
 
 #subscribe::before {
@@ -270,12 +392,22 @@ h2 {
   right: 0;
   left: 0;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
-#subscribe h1 {
+#subscribe .heading-wow {
   color: #ffff;
   font-size: 30px;
+}
+
+@media screen and (min-width: 768px){
+#subscribe .heading-wow {
+  font-size: 36px;
+}
+#subscribe .heading-wow span {
+  font-size: 45px;
+}
+
 }
 
 #subscribe span {
@@ -300,7 +432,6 @@ h2 {
   position: relative;
   display: table;
   border-collapse: separate;
-
 }
 
 .form-control {
@@ -311,7 +442,7 @@ h2 {
   border: none;
   height: 65px;
   border-radius: 0px;
-  float: inline-start;
+  float: left;
   font-size: 15px;
   line-height: 1.42857143;
 }
@@ -329,7 +460,7 @@ h2 {
   background: none;
   font-size: 16px;
   display: block;
-  float: inline-start;
+  float: left;
   margin-top: 20px;
 }
 
@@ -429,20 +560,19 @@ h2 {
 
 .formGroup {
   margin-bottom: 15px;
+  width: inherit;
 }
 
 
 
 #contatti .contenuto a {
   background: #FF4F02;
-  float: right;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 0px;
   border: 0px;
-  width: 512px;
-  height: 25px;
+  height: 20px;
   padding-top: 15px;
 }
 
@@ -491,19 +621,22 @@ h2 {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
+  font-family: inherit;
 }
 
 #contatti .contenuto form textarea {
   height: 140px;
   border-radius: 0px;
   box-shadow: none;
+  margin-bottom: 33px;
+  
 }
 
-#contatti .contenuto form textarea:focus {
+#contatti .contenuto textarea:focus {
   border: 1px solid #7EC3BB;
 }
 
-/*FOOTER*/
+/*-------------------------------FOOTER-------------------------------*/
 
 
 #footer {
@@ -628,7 +761,7 @@ h2 {
   color: #474747;
 }
 
-/* FOOTER BOTTOM */
+/* -------------------------------FOOTER BOTTOM------------------------------- */
 
 #bottomFooter {
   background: #E9E9E9;

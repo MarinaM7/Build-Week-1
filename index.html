@@ -12,29 +12,32 @@
 </head>
 
 <body>
+
     <header>
 
-        <div class="elementi">
+    </header>
+
+    <div class="elementi" id="navigazione">
+        <div id="menu">
+            <div id="logo">
+                <img src="assets/driveImg/images/logo.png" alt="">
+            </div>
+            <label for="menuButton" id="menuMobile">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menuButton">
             <nav>
-
-                <div id="logo">
-                    <img src="assets/driveImg/images/logo.png" alt="">
-                </div>
-                <label for="menuButton" id="menuMobile"><i class="fa-solid fa-bars"></i></label>
-                <input type="checkbox" id="menuButton">
-
-                <ul id="menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#prezzi">MENU</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
-
             </nav>
         </div>
-    </header>
+    </div>
 
     <main>
 
@@ -83,12 +86,13 @@
         <!---------------------------FINE HOME--------------------------->
 
         <!---------------------------INIZIO ABOUT US--------------------------->
+        <a name="aboutus"></a>
         <section class="AboutUs">
             <div class="elementi">
                 <div class="cooker">
                     <img src="assets/driveImg/images/cooker-img.png" alt="cooker">
                 </div>
-                <h1>
+                    <h1>
                     Your <span>Restautant's</span><br>Website Has To Look <span>Good</span>
                 </h1>
                 <hr>
@@ -105,7 +109,7 @@
             </div>
         </section>
         <!---------------------------FINE ABOUT US--------------------------->
-
+        <a name="blog"></a>
         <section id="blog">
             <div class="elementi">
                 <div class="block">
@@ -192,19 +196,20 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
         </section>
 
+        <a name="prezzi"></a>
         <section id="prezzi">
             <!--id price-->
             <div class="contenitore">
-                <!--class container-->
+                <!--class uguale al sito-->
                 <div class="contenitore1">
-                    <!--class row-->
+                    <!--class uguale al sito-->
                     <div class="elementi">
                         <!--class col-md-12-->
                         <div class="contenuto">
-                            <!--class block-->
+                            <!--class uguale al sito-->
                             <h1 class="heading-wow">
                                 <!--classe heading wow fadeInUp-->
                                 our
@@ -213,7 +218,7 @@
                                 <span>PRICE</span>
                             </h1>
                             <hr>
-                            <p  id="mainP" class="animationWow">
+                            <p id="mainP" class="animationWow">
                                 <!--class wow fadeInUp animated-->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt
@@ -332,7 +337,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <a id="menuMI" class="moreinfo" href="#">MORE INFO</a>
+                                <a class="moreinfo" id="menuMI" href="#">MORE INFO</a>
                                 <!--classe btn btn-default pull-right wow bounceIn animated-->
                             </div>
                         </div>
@@ -340,16 +345,18 @@
                 </div>
             </div>
         </section>
+
+        <a name="news"></a>
         <section id="subscribe">
             <!--id uguale al sito-->
             <div class="contenitore">
-                <!--class container-->
+                <!--class uguale al sito-->
                 <div class="contenitore1">
-                    <!--class row-->
+                    <!--class uguale al sito-->
                     <div class="elementi">
                         <!--class col-md-12-->
                         <div class="contenuto">
-                            <!--class block-->
+                            <!--class uguale al sito-->
                             <h1 class="heading-wow">
                                 <!--classe heading wow fadeInUp-->
                                 SUBSCRIBE
@@ -372,7 +379,8 @@
                                         <!--class e id uguale al sito-->
                                         <div class="input-btn">
                                             <!--input-group-addon-->
-                                            <button class="btn-for-input" type="submit"><a href="#prezzi">SUBSCRIBE</a></button>
+                                            <button class="btn-for-input" type="submit"><a
+                                                    href="#prezzi">SUBSCRIBE</a></button>
                                             <!--btn btn-default-->
                                         </div>
                                     </div>
@@ -386,6 +394,7 @@
         </section>
 
         <!--------------------- INIZIO CONTATTI ----------------------------------->
+        <a name="contact"></a>
         <section id="contatti">
             <div class="contenitore">
                 <div class="contenitore1">
@@ -397,7 +406,7 @@
                             <form>
                                 <!--------------- INIZIO     FORM -------------------------------->
                                 <div class="formGroup">
-                                    <input type="text" class="elementoForm" placeholder="Write your full name here...">
+                                    <input type="text" class="elementoForm" id="io" placeholder="Write your full name here...">
                                 </div>
                                 <div class="formGroup">
                                     <input type="email" class="elementoForm"
@@ -407,7 +416,7 @@
                                     <textarea class="elementoForm" rows="3"
                                         placeholder="Write your messagge here..."></textarea>
                                 </div>
-                                
+
                             </form>
                             <!----------------------- FINE FORM ------------------------------->
                             <a href="#" class="btn">SEND YOUR MESSAGGE</a>
@@ -531,7 +540,6 @@
 
 
     <!---------------------------- FINE FOOTER (SECONDA PARTE) ---------------------------->
-
     <script src="assets/js/script.js"></script>
 </body>
 
