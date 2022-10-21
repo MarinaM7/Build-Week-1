@@ -21,6 +21,11 @@ header::before {
 
 #logo {
   height: 26px;
+  padding-bottom: 15px;
+}
+
+#logo img {
+  padding-left: 20px;
 }
 
 #navigazione {
@@ -68,6 +73,7 @@ nav ul {
   position: relative;
   line-height: 3;
   padding-left: 12px;
+  padding-bottom: 5px;
 }
 
 nav ul ::before {
@@ -86,8 +92,16 @@ input#menuButton:checked~nav {
 }
 
 nav ul li a {
-  color: black;
+  color: #2E2E2E;
   text-decoration: none;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -230,6 +244,7 @@ nav ul li a {
   opacity: 0.5;
 }
 
+
 .block {
   display: flex;
   flex-direction: column;
@@ -260,11 +275,22 @@ nav ul li a {
 
 .blog-img img {
   width: 100%;
+  height: 100%;
 }
 
-.blog-img {
-  border: none;
+.hr{
+  margin-bottom: 40px;
 }
+
+
+#blog .block ul li .blog-img {
+  overflow: hidden;
+}
+.blog-img img:hover{
+
+  transform: rotate(5deg) scale(1.2);
+    transition: 2s;
+  }
 
 #blog .block ul li p {
   padding-top: 25px;
@@ -554,9 +580,9 @@ h2 {
   font-size: 45px;
 }
 
-
-
 /* FORM */
+
+
 
 .formGroup {
   margin-bottom: 15px;
@@ -580,7 +606,7 @@ h2 {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding-bottom: 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
@@ -593,6 +619,7 @@ h2 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 #contatti .contenuto form {
@@ -614,7 +641,7 @@ h2 {
   display: block;
   width: 100%;
   height: 34px;
-  padding: 6px 12px;
+  padding: 6px 2.5px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
