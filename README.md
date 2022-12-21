@@ -1,4 +1,3 @@
 # Build-Week-1
 
-Inizio Progetto
-ciao
+Single page application, developed using HTML and CSS with my classmates
